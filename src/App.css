@@ -26,6 +26,10 @@ body {
   background-color: #f7f7f7;
 }
 
+.App {
+  position: relative;
+}
+
 h1 {
   text-align: center;
   padding: 2rem;

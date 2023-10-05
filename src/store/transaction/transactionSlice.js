@@ -12,7 +12,7 @@ export const transactionSlice = createSlice({
     removeTransaction: (currentSlice, action) => {
       let list = currentSlice.transactionList
       list = list.splice(action.payload, 1)
-    }
+    },
   },
 });
 
