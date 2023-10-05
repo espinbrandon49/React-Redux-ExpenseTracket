@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import Balance from '../Balance/Balance'
-import ExpenseTotal from '../ExpenseTotal/ExpenseTotal'
-import IncomeTotal from '../IncomeTotal/IncomeTotal'
+import Balance from '../../components/Balance/Balance'
+import ExpenseTotal from '../../components/ExpenseTotal/ExpenseTotal'
+import IncomeTotal from '../../components/IncomeTotal/IncomeTotal'
 import s from './style.module.css'
 
 export default function Balances() {

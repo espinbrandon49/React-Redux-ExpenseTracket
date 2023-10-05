@@ -1,6 +1,6 @@
 import './App.css';
-import Balances from './components/Balances/Balances';
-import TransactionInput from './components/TransactionInput/TransactionInput';
+import Balances from './containers/Balances/Balances';
+import TransactionInput from './containers/TransactionInput/TransactionInput';
 import TransactionList from './containers/TransactionList/TransactionList';
 
 function App() {
