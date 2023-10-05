@@ -1,0 +1,9 @@
+section {
+  padding: 1rem 0;
+}
+
+h4 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}

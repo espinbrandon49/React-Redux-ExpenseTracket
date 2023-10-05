@@ -1,0 +1,34 @@
+.listitem {
+  position: relative;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  list-style: none;
+  background-color: var(--white);
+  width: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.delete {
+  position: absolute;
+  transform: translate(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  padding: .75rem;
+  border: 0;
+  background-color: #e74c3c;
+  border-radius: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.listitem:hover .delete {
+  opacity: 1;
+}

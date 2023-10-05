@@ -1,0 +1,10 @@
+.balances {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--white);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  box-shadow: var(--box-shadow);
+}
