@@ -5,13 +5,14 @@ import { addTransactionAction } from '../../store/transaction/transactionSlice';
 
 export default function TransactionInput() {
   const dispatch = useDispatch();
-  const [price, setPrice] = useState();
-  const [transactionName, setTransactionName] = useState();
+  const [price, setPrice] = useState("");
+  const [transactionName, setTransactionName] = useState('');
 
   function submit(e) {
     e.preventDefault();
     dispatch(addTransactionAction({name: transactionName, price: price}));
-    console.log("submit");
+    setPrice("");
+    setTransactionName("");
   }
 
   return (
@@ -24,6 +25,7 @@ export default function TransactionInput() {
             type="text"
             className={s.text}
             placeholder="Enter text..."
+            value={transactionName}
             onChange={(e) => setTransactionName(e.target.value)}
           />
         </div>
@@ -34,6 +36,7 @@ export default function TransactionInput() {
             step="0.01"
             className={s.text}
             placeholder="Enter amount..."
+            value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
         </div>
