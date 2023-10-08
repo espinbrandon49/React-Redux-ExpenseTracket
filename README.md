@@ -17,4 +17,4 @@ npm i
 npm start
 ```
 
-### [Deployed](https://react-redux-expense-tracket-3fq6wj95f.vercel.app/)
+### [Deployed](https://react-redux-expense-tracket.vercel.app/)
