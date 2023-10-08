@@ -15,7 +15,7 @@ export default function ListItem({ item, id }) {
   return (
     <div className={s.listitem} >
       <span><button onClick={remove} className={s.delete}>x</button></span>
-      <li>
+      <li className={(item.price > 0) ? s.positive : s.negative}>
         <span>{item.name}</span>
         <span>{(item.price > 0) ? "+" + item.price : item.price}</span>
       </li>
